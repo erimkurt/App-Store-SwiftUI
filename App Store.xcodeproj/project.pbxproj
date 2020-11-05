@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		543D67F22554023000E1B512 /* ApplicationDetailDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D67F12554023000E1B512 /* ApplicationDetailDescriptionView.swift */; };
 		54C62612254E9878008CE6A3 /* App_StoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C62611254E9878008CE6A3 /* App_StoreApp.swift */; };
 		54C62614254E9878008CE6A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C62613254E9878008CE6A3 /* ContentView.swift */; };
 		54C62616254E9879008CE6A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C62615254E9879008CE6A3 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		543D67F12554023000E1B512 /* ApplicationDetailDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDetailDescriptionView.swift; sourceTree = "<group>"; };
 		54C6260E254E9878008CE6A3 /* App Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C62611254E9878008CE6A3 /* App_StoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_StoreApp.swift; sourceTree = "<group>"; };
 		54C62613254E9878008CE6A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				54C62658254E9A1A008CE6A3 /* ApplicationDetailInformationView.swift */,
 				54C62659254E9A1A008CE6A3 /* ApplicationDetailHeaderView.swift */,
 				54C6265A254E9A1A008CE6A3 /* ApplicationDetailView.swift */,
+				543D67F12554023000E1B512 /* ApplicationDetailDescriptionView.swift */,
 			);
 			path = "Application Detail";
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				54C6266E254EAE90008CE6A3 /* View.swift in Sources */,
 				54C62661254E9A1A008CE6A3 /* ApplicationDetailHeaderView.swift in Sources */,
 				54C6263E254E99C2008CE6A3 /* ImageLoader.swift in Sources */,
+				543D67F22554023000E1B512 /* ApplicationDetailDescriptionView.swift in Sources */,
 				54C62649254E99F6008CE6A3 /* WebService.swift in Sources */,
 				54C62652254E9A04008CE6A3 /* Feed.swift in Sources */,
 				54C62668254EA532008CE6A3 /* String.swift in Sources */,

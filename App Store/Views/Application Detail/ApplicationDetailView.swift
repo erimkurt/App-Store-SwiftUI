@@ -16,6 +16,7 @@ struct ApplicationDetailView: View {
         VStack(alignment: .center) {
             List {
                 ApplicationDetailHeaderView(application: application)
+                ApplicationDetailDescriptionView(application: model.application)
                 ApplicationDetailInformationView(application: model.application)
             }
         }

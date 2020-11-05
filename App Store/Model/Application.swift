@@ -22,6 +22,7 @@ struct Application: Codable {
     let languageCodesISO2A: [String]?
     let trackContentRating: String?
     let advisories: [String]?
+    let description: String?
     
     var genreTitle: String {
         if let title = genres?.first?.genreValue?.name {

@@ -23,6 +23,7 @@ struct Application: Codable {
     let trackContentRating: String?
     let advisories: [String]?
     let description: String?
+    let userRatingCount: Int?
     
     var genreTitle: String {
         if let title = genres?.first?.genreValue?.name {

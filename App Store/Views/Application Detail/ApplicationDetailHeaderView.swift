@@ -47,6 +47,10 @@ struct ApplicationDetailHeaderView: View {
 
 struct ApplicationDetailHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ApplicationDetailHeaderView()
+        Group {
+            ApplicationDetailHeaderView()
+                .preferredColorScheme(.dark)
+            ApplicationDetailHeaderView()
+        }
     }
 }

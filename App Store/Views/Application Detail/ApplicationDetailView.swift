@@ -17,6 +17,7 @@ struct ApplicationDetailView: View {
             List {
                 ApplicationDetailHeaderView(application: application)
                 ApplicationDetailDescriptionView(application: model.application)
+                ApplicationDetailRatingsView(ratingCount: model.application?.userRatingCount ?? 0)
                 ApplicationDetailInformationView(application: model.application)
             }
         }

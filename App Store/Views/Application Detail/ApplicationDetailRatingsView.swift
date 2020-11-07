@@ -35,13 +35,14 @@ struct ApplicationDetailRatingsView: View {
                         .foregroundColor(.gray)
                 }
                 Spacer()
-                ApplicationDetailRatingsStarsView(ratingCount: ratingCount)
+                RatingsStarsView(ratingCount: ratingCount)
             }
         }
+        .padding(.vertical, 10.0)
     }
 }
 
-struct ApplicationDetailRatingsStarsView: View {
+struct RatingsStarsView: View {
     
     var ratingCount: Int
     
@@ -49,7 +50,7 @@ struct ApplicationDetailRatingsStarsView: View {
         VStack(alignment: .trailing) {
             VStack(alignment: .trailing, spacing: 2.0) {
                 ForEach((1...5).reversed(), id: \.self) {
-                    ApplicationDetailRatingsStarsItemView(starIndex: $0, starPercent: .random(in: 0...100))
+                    RatingsStarsItemView(starIndex: $0, starPercent: .random(in: 0...100))
                 }
             }
             Text("\(ratingCount) Ratings")
@@ -60,7 +61,7 @@ struct ApplicationDetailRatingsStarsView: View {
     }
 }
 
-struct ApplicationDetailRatingsStarsItemView: View {
+struct RatingsStarsItemView: View {
     
     var starIndex: Int
     var starPercent: Double

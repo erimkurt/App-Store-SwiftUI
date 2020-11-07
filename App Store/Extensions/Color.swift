@@ -10,4 +10,5 @@ import SwiftUI
 
 extension Color {
     static let genreGray = Color("GenreGray")
+    static let reviewGray = Color("ReviewGray")
 }

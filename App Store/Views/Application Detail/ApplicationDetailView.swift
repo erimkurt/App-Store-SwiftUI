@@ -16,8 +16,13 @@ struct ApplicationDetailView: View {
         VStack(alignment: .center) {
             List {
                 ApplicationDetailHeaderView(application: application)
+                    .buttonStyle(PlainButtonStyle())
                 ApplicationDetailDescriptionView(application: model.application)
                 ApplicationDetailRatingsView(ratingCount: model.application?.userRatingCount ?? 0)
+                    .buttonStyle(PlainButtonStyle())
+                ApplicationDetailReviewsView()
+                    .buttonStyle(PlainButtonStyle())
+                    .padding(.horizontal, -20)
                 ApplicationDetailInformationView(application: model.application)
             }
         }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		543D67F22554023000E1B512 /* ApplicationDetailDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D67F12554023000E1B512 /* ApplicationDetailDescriptionView.swift */; };
 		543D67F525540B6700E1B512 /* ApplicationDetailRatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D67F425540B6700E1B512 /* ApplicationDetailRatingsView.swift */; };
+		54AA33FC255667EF00EE69F6 /* ApplicationDetailReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AA33FB255667EF00EE69F6 /* ApplicationDetailReviewsView.swift */; };
+		54AA34002556739800EE69F6 /* Pages in Frameworks */ = {isa = PBXBuildFile; productRef = 54AA33FF2556739800EE69F6 /* Pages */; };
 		54C62612254E9878008CE6A3 /* App_StoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C62611254E9878008CE6A3 /* App_StoreApp.swift */; };
 		54C62614254E9878008CE6A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C62613254E9878008CE6A3 /* ContentView.swift */; };
 		54C62616254E9879008CE6A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54C62615254E9879008CE6A3 /* Assets.xcassets */; };
@@ -41,6 +43,7 @@
 /* Begin PBXFileReference section */
 		543D67F12554023000E1B512 /* ApplicationDetailDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDetailDescriptionView.swift; sourceTree = "<group>"; };
 		543D67F425540B6700E1B512 /* ApplicationDetailRatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDetailRatingsView.swift; sourceTree = "<group>"; };
+		54AA33FB255667EF00EE69F6 /* ApplicationDetailReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDetailReviewsView.swift; sourceTree = "<group>"; };
 		54C6260E254E9878008CE6A3 /* App Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C62611254E9878008CE6A3 /* App_StoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_StoreApp.swift; sourceTree = "<group>"; };
 		54C62613254E9878008CE6A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C62623254E98DB008CE6A3 /* Alamofire in Frameworks */,
+				54AA34002556739800EE69F6 /* Pages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +247,7 @@
 				54C62659254E9A1A008CE6A3 /* ApplicationDetailHeaderView.swift */,
 				543D67F12554023000E1B512 /* ApplicationDetailDescriptionView.swift */,
 				543D67F425540B6700E1B512 /* ApplicationDetailRatingsView.swift */,
+				54AA33FB255667EF00EE69F6 /* ApplicationDetailReviewsView.swift */,
 			);
 			path = "Application Detail";
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			name = "App Store";
 			packageProductDependencies = (
 				54C62622254E98DB008CE6A3 /* Alamofire */,
+				54AA33FF2556739800EE69F6 /* Pages */,
 			);
 			productName = "App Store";
 			productReference = 54C6260E254E9878008CE6A3 /* App Store.app */;
@@ -295,6 +301,7 @@
 			mainGroup = 54C62605254E9878008CE6A3;
 			packageReferences = (
 				54C62621254E98DB008CE6A3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				54AA33FE2556739800EE69F6 /* XCRemoteSwiftPackageReference "Pages" */,
 			);
 			productRefGroup = 54C6260F254E9878008CE6A3 /* Products */;
 			projectDirPath = "";
@@ -344,6 +351,7 @@
 				54C62660254E9A1A008CE6A3 /* ApplicationDetailInformationView.swift in Sources */,
 				54C6264F254E9A04008CE6A3 /* Genre.swift in Sources */,
 				54C62640254E99C2008CE6A3 /* Config.swift in Sources */,
+				54AA33FC255667EF00EE69F6 /* ApplicationDetailReviewsView.swift in Sources */,
 				54C6263F254E99C2008CE6A3 /* ImageView.swift in Sources */,
 				54C62663254E9A1A008CE6A3 /* TopFreeListView.swift in Sources */,
 				54C6266B254EA697008CE6A3 /* Language.swift in Sources */,
@@ -538,6 +546,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		54AA33FE2556739800EE69F6 /* XCRemoteSwiftPackageReference "Pages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nachonavarro/Pages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
 		54C62621254E98DB008CE6A3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -549,6 +565,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		54AA33FF2556739800EE69F6 /* Pages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54AA33FE2556739800EE69F6 /* XCRemoteSwiftPackageReference "Pages" */;
+			productName = Pages;
+		};
 		54C62622254E98DB008CE6A3 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 54C62621254E98DB008CE6A3 /* XCRemoteSwiftPackageReference "Alamofire" */;

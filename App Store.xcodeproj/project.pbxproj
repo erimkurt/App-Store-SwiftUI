@@ -41,6 +41,7 @@
 		54C6266E254EAE90008CE6A3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C6266D254EAE90008CE6A3 /* View.swift */; };
 		54E6C6DF2557C14D00113366 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6C6DE2557C14D00113366 /* Double.swift */; };
 		54E6C6E22557CA2000113366 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6C6E12557CA2000113366 /* Int.swift */; };
+		54E6C6E52557CE8C00113366 /* ApplicationDetailPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6C6E42557CE8C00113366 /* ApplicationDetailPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		54C6266D254EAE90008CE6A3 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		54E6C6DE2557C14D00113366 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		54E6C6E12557CA2000113366 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		54E6C6E42557CE8C00113366 /* ApplicationDetailPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDetailPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 				543D67F12554023000E1B512 /* ApplicationDetailDescriptionView.swift */,
 				543D67F425540B6700E1B512 /* ApplicationDetailRatingsView.swift */,
 				54AA33FB255667EF00EE69F6 /* ApplicationDetailReviewsView.swift */,
+				54E6C6E42557CE8C00113366 /* ApplicationDetailPreview.swift */,
 			);
 			path = "Application Detail";
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				54C6266E254EAE90008CE6A3 /* View.swift in Sources */,
 				54C62661254E9A1A008CE6A3 /* ApplicationDetailHeaderView.swift in Sources */,
 				54C6263E254E99C2008CE6A3 /* ImageLoader.swift in Sources */,
+				54E6C6E52557CE8C00113366 /* ApplicationDetailPreview.swift in Sources */,
 				543D67F22554023000E1B512 /* ApplicationDetailDescriptionView.swift in Sources */,
 				54C62649254E99F6008CE6A3 /* WebService.swift in Sources */,
 				54C62652254E9A04008CE6A3 /* Feed.swift in Sources */,

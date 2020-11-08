@@ -14,7 +14,8 @@ struct ApplicationView: View {
     
     var body: some View {
         HStack(alignment: .center, spacing: 10) {
-            ImageView(withURL: application?.artworkUrl100 ?? "")
+            ImageView(withURL: application?.artworkUrl100 ?? "", cornerRadius: 15.0)
+                .frame(width: 60, height: 60)
             HStack(alignment: .top) {
                 Text("\((index ?? 0) + 1)")
                     .fontWeight(.medium)

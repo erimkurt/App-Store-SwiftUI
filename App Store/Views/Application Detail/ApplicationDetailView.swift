@@ -19,6 +19,8 @@ struct ApplicationDetailView: View {
                     .buttonStyle(PlainButtonStyle())
                 ApplicationDetailPreviewInformationView(application: model.application)
                     .padding(.horizontal, -20)
+                ApplicationDetailPreview(urls: model.application?.screenshotUrls ?? [])
+                    .padding(.horizontal, -20)
                 ApplicationDetailDescriptionView(application: model.application)
                 ApplicationDetailRatingsView(ratingCount: model.application?.userRatingCount ?? 0, averageRating: model.application?.averageUserRating ?? 0.0)
                     .buttonStyle(PlainButtonStyle())

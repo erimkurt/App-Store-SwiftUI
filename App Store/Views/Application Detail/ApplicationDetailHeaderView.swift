@@ -14,7 +14,8 @@ struct ApplicationDetailHeaderView: View {
     
     var body: some View {
         HStack(alignment: .top, spacing: 20.0) {
-            ImageView(withURL: application?.artworkUrl100 ?? "", size: 120.0)
+            ImageView(withURL: application?.artworkUrl100 ?? "", cornerRadius: 30.0)
+                .frame(width: 120.0, height: 120.0)
             VStack(alignment: .leading) {
                 Text(application?.name ?? "Name")
                     .fontWeight(.medium)

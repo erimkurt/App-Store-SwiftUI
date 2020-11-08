@@ -25,6 +25,7 @@ struct Application: Codable {
     let description: String?
     let userRatingCount: Int?
     let averageUserRating: Double?
+    let screenshotUrls: [String]?
     
     var genrePreview: String {
         if let title = genres?.first?.genreValue?.name {

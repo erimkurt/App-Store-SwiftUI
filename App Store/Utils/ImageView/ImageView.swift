@@ -11,23 +11,23 @@ import SwiftUI
 struct ImageView: View {
     @ObservedObject var imageLoader: ImageLoader
 
-    var size: CGFloat = 60.0
+    var cornerRadius: CGFloat = 60.0
     
-    init (withURL url: String, size: CGFloat = 60.0) {
+    init (withURL url: String, cornerRadius: CGFloat = 60.0) {
         imageLoader = ImageLoader(urlString: url)
-        self.size = size
+        self.cornerRadius = cornerRadius
     }
 
     var body: some View {
         
         Image(uiImage: imageLoader.image)
             .resizable()
-            .frame(width: size, height: size)
+            .aspectRatio(contentMode: .fit)
             .clipShape(
-                RoundedRectangle(cornerRadius: size / 4)
+                RoundedRectangle(cornerRadius: cornerRadius)
             )
             .overlay(
-                RoundedRectangle(cornerRadius: size / 4)
+                RoundedRectangle(cornerRadius: cornerRadius)
                     .stroke(Color.gray.opacity(0.2), lineWidth: 1)
             )
     }

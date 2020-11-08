@@ -9,8 +9,22 @@ import Foundation
 import SwiftUI
 
 extension String {
-    var sizeWithUnit: String {
-        let fileSizeWithUnit = ByteCountFormatter.string(fromByteCount: Int64(self) ?? 0, countStyle: .file)
-        return fileSizeWithUnit
+    var sizeOfFileWithUnit: String {
+        let size = ByteCountFormatter.string(fromByteCount: Int64(self) ?? 0, countStyle: .file)
+        return size
+    }
+    
+    var sizeOfFileUnit: String {
+        let formatter = ByteCountFormatter()
+        formatter.includesCount = false
+        formatter.countStyle = .file
+        return formatter.string(fromByteCount: Int64(self) ?? 0)
+    }
+    
+    var sizeOfFile: String {
+        let formatter = ByteCountFormatter()
+        formatter.includesUnit = false
+        formatter.countStyle = .file
+        return formatter.string(fromByteCount: Int64(self) ?? 0)
     }
 }

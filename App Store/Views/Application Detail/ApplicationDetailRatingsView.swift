@@ -11,6 +11,7 @@ import SwiftUI
 struct ApplicationDetailRatingsView: View {
     
     var ratingCount: Int = 0
+    var averageRating: Double = 0.0
     
     var body: some View {
         VStack(spacing: 0.0) {
@@ -25,7 +26,7 @@ struct ApplicationDetailRatingsView: View {
             }
             HStack(alignment: .bottom) {
                 VStack {
-                    Text("2.5")
+                    Text("\(averageRating, specifier: "%.1f")")
                         .font(.system(size: 55))
                         .fontWeight(.bold)
                         .foregroundColor(.genreGray)

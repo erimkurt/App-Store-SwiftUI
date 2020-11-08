@@ -24,6 +24,15 @@ struct Application: Codable {
     let advisories: [String]?
     let description: String?
     let userRatingCount: Int?
+    let averageUserRating: Double?
+    
+    var genrePreview: String {
+        if let title = genres?.first?.genreValue?.name {
+            return title
+        } else {
+            return genres?.first?.stringValue ?? ""
+        }
+    }
     
     var genreTitle: String {
         if let title = genres?.first?.genreValue?.name {
@@ -41,13 +50,21 @@ struct Application: Codable {
     }
     
     var size: String {
-        return fileSizeBytes?.sizeWithUnit ?? ""
+        return fileSizeBytes?.sizeOfFileWithUnit ?? ""
     }
     
     var language: String {
         let firstLanguage = languageCodesISO2A?.first ?? ""
         if languageCodesISO2A?.count ?? 0 > 1 {
             return "\(firstLanguage) and \(languageCodesISO2A?.count ?? 0) more"
+        }
+        return firstLanguage
+    }
+    
+    var languageCount: String {
+        let firstLanguage = languageCodesISO2A?.first ?? ""
+        if languageCodesISO2A?.count ?? 0 > 1 {
+            return "+ \(languageCodesISO2A?.count ?? 0) More"
         }
         return firstLanguage
     }

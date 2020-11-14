@@ -12,16 +12,11 @@ class WebService {
     func getTopFree(completion: @escaping (FeedResponse) -> ()) {
         let api = "\(Config.baseProtocol)rss.\(Config.baseURL)/api/\(Config.version)/\(Config.region)/\(MediaType.iosApps.rawValue)/top-free/all/100/explicit.json"
         print(api)
-        guard let url = URL(string: api) else {
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) { data, _, _ in
-            let posts = try! JSONDecoder().decode(FeedResponse.self, from: data!)
-            DispatchQueue.main.async {
-                completion(posts)
+        AF.request(api, method: .get)
+            .responseDecodable(of: FeedResponse.self) { (response) in
+                guard let feed = response.value else { return }
+                completion(feed)
             }
-        }.resume()
     }
     
     func getApplication(id: String, completion: @escaping (LookUp) -> ()) {

@@ -10,7 +10,7 @@ import Alamofire
 
 class WebService {
     func getTopFree(completion: @escaping (FeedResponse) -> ()) {
-        let api = "\(Config.baseProtocol)rss.\(Config.baseURL)/api/\(Config.version)/\(Config.region)/\(MediaType.iosApps.rawValue)/top-free/all/100/explicit.json"
+        let api = "\(Config.baseProtocol)rss.\(Config.baseURLMarketingTools)/api/\(Config.version)/\(Config.region)/\(MediaType.iosApps.rawValue)/top-free/50/apps.json"
         print(api)
         AF.request(api, method: .get)
             .responseDecodable(of: FeedResponse.self) { (response) in
